@@ -1,7 +1,7 @@
 # FastAPI E-Commerce Core 🚀
 
 Live Demo
-https://fastapi-ecommerce-core.onrender.com/docs
+https://efe-arslan-api.onrender.com/docs
 
 A robust, production-ready REST API for an E-Commerce backend built with **FastAPI**, **SQLAlchemy**, and **Python**.
 
