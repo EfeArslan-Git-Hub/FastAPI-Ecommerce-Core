@@ -9,7 +9,7 @@ from .routers import products, orders
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="FastAPI Ecommerce Core",
+    title="FastAPI Ecommerce Core by Efe Arslan",
     description="A simple REST API for managing products and orders with stock management.",
     version="1.0.0"
 )
