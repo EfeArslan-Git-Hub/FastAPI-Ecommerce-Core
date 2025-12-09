@@ -13,5 +13,7 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 # Copy the rest of the application's code to the container
 COPY ./app /code/app
 
-# Command to run the application using Uvicorn
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+# Command to run the application
+# We use "python -m app.main" so it executes the logic inside "if __name__ == '__main__':"
+# This allows it to read the PORT env var or default to 8000
+CMD ["python", "-m", "app.main"]
